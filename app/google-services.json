@@ -1,0 +1,88 @@
+{
+  "project_info": {
+    "project_number": "938573849236",
+    "firebase_url": "https://onveggy-e5e9e.firebaseio.com",
+    "project_id": "onveggy-e5e9e",
+    "storage_bucket": "onveggy-e5e9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938573849236:android:d17d16b73c5103ec",
+        "android_client_info": {
+          "package_name": "com.potenza.onveggy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938573849236-518bjrl11i4rt5uaocnu81lg9kjufqfn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.potenza.onveggy",
+            "certificate_hash": "6fdf229e4c30d5ce4c905495b42309574b3b5e24"
+          }
+        },
+        {
+          "client_id": "938573849236-9627fa4fo40gn1rqopmk5pjed4t62u0q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.potenza.onveggy",
+            "certificate_hash": "d2bde4d21c6ec6a5216ea7079147c70f54f11e32"
+          }
+        },
+        {
+          "client_id": "938573849236-9mj98idsfq5had1atrplrs3teljn1cud.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.potenza.onveggy",
+            "certificate_hash": "7970a209fe8e6b04cb2b43adff679819d979cf78"
+          }
+        },
+        {
+          "client_id": "938573849236-fb9e8phokolan7pr24tjtv82pucai80n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.potenza.onveggy",
+            "certificate_hash": "5bc008267d465b54dc91cac9253d88d5686f4ce0"
+          }
+        },
+        {
+          "client_id": "938573849236-hp65jm5pbkkb8uhr41ej4qnji6d0k58q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.potenza.onveggy",
+            "certificate_hash": "c249a973354564246fdb3f61059fb26bc5901a0c"
+          }
+        },
+        {
+          "client_id": "938573849236-mvooqv83kaach2sbvnjcs3t1uhj5vm6i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv7d1Q0X3yj5h5X6obgLkBiC99ovf2YmY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938573849236-mvooqv83kaach2sbvnjcs3t1uhj5vm6i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "938573849236-fd0geqcg8i2mvcg5a2evjhvrjm3vfc2f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.monto.OnVeggy",
+                "app_store_id": "1341266349"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

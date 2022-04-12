@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion '29.0.3'
+    defaultConfig {
+        applicationId "com.potenza.onveggy"
+        minSdkVersion 20
+        targetSdkVersion 30
+        versionCode 57
+        versionName "5.7"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [onesignal_app_id               : "Your One Signal Key",
+                                onesignal_google_project_number: "REMOTE"]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+configurations {
+    all {
+        exclude module: 'httpclient'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleDynamicVersion,GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    //noinspection GradleDynamicVersion
+    implementation 'com.google.android.material:material:1.4.0'
+
+    //noinspection GradleDynamicVersion
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+
+    implementation 'com.google.code.gson:gson:2.8.7'
+    implementation 'org.scribe:scribe:1.3.7'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation 'com.google.firebase:firebase-dynamic-links:20.1.1'
+    implementation 'com.google.firebase:firebase-appindexing:20.0.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+    implementation 'com.google.firebase:firebase-iid:21.1.0'
+    implementation 'com.google.firebase:firebase-crash:16.2.1'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation 'org.sufficientlysecure:html-textview:4.0'
+
+    implementation 'com.onesignal:OneSignal:3.8.1'
+    implementation 'com.facebook.android:facebook-android-sdk:11.1.0'
+
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'androidx.browser:browser:1.3.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation files('libs/full.jar')
+    implementation 'com.google.firebase:firebase-inappmessaging-display:20.1.0'
+    implementation "androidx.browser:browser:1.3.0"
+}
+
+apply plugin: 'com.google.gms.google-services'
+
